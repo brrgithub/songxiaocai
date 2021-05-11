@@ -1,0 +1,4 @@
+<!--pages/login/index.wxml-->
+<button class='phone-text'   open-type="getUserInfo"  lang="zh_CN" bindgetuserinfo="onGotUserInfo">请登录</button>
+<button class='dialog-btn' open-type="getUserInfo" bindgetuserinfo="getUserInfo">获取用户信息</button>
+<button class='dialog-btn' open-type="" bindtap="login">登录</button>

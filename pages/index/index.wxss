@@ -1,0 +1,238 @@
+/**index.wxss**/
+.container{
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  /* background-color: rgba(228, 226, 226, 0.685); */
+  position: relative;
+  /* border:  1px solid black; */
+  /* height: 1000px; */
+}
+.top{
+  width: 100%;
+  height: 200px;
+  position: relative;
+}
+.top image{
+  /* width: 100%; */
+  height: 100%;
+  position: absolute;
+}
+.top .topword{
+  position: absolute;
+  width: 100%;
+  /* border:  1px solid black; */
+  top: 20px;
+  /* left: 20px; */
+  color: aliceblue;
+}
+.top .topword text{
+  display: block;
+}
+.top .topword .top1{
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.top .topword .top2{
+  font-size: 35px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}
+.storename{
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+.top .topword .comeon{
+  width: 35%;
+  font-size: small;
+  background-color: rgb(254,211,179);
+  border-radius: 14px;
+  color:rgb(240,88,61);
+  margin-top: 5px;
+}
+.top .topword .godata{
+  width: 95%;
+  height: 80px;
+  display: inline-block;
+  margin: 5px 7px;
+  border-radius: 15px;
+}
+/* 目录 */
+.maintop{
+  width: 95%;
+  margin: auto;
+  margin-top: 60px;
+  background-color:white;
+  border-radius: 16px;
+}
+.maintop .goods{
+  width: 17%;
+  display: inline-block;
+  margin: 1.5%;
+  /* height: auto; */
+}
+.maintop .goods image{
+  width: 35px;
+  height: 36px;
+  display: block;
+  margin:  auto;
+}
+.maintop .goods text{
+  display: inline-block;
+  font-size: 12px;
+  width: 100%;
+  text-align: center;
+  font-weight: 300;
+
+}
+/* 目录结束 */
+
+/* 推荐 */
+.recommendtop text{
+  display: block;
+  text-align: center;
+}
+.recommendtop .t1{
+  font-size: 20px;
+  margin-top: 16px;
+  font-weight: 700;
+}
+.recommendtop .t2{
+  font-size: 13px;
+  color: rgb(196,196,196);
+}
+.recommendmain .goods{
+  /* border: solid black 1px; */
+  width: 45%;
+  /* margin-left: 3.5%; */
+  margin: 4% 0 0 3.5%;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.recommendmain .goods image{
+  width: 100%;
+  height: 130px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.recommendmain .goods text{
+  display: block;
+  margin-left: 4px;
+}
+.recommendmain .goods .title{
+  font-size: 13px;
+  font-weight: 300;
+}
+.recommendmain .goods .detail{
+  font-size: 11px;
+  color: rgb(196,196,196);
+  margin-top: 6px;
+  font-weight: 200;
+}
+/* 推荐结束 */
+
+
+/* 档口弹出框选择开始 */
+.storemain{
+  float: left;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: #F7F7F7;
+  border: solid 1px #D9D9D9;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+.storemain text{
+  display: block;
+  margin-left: 4px;
+}
+.storemain .stores{
+  width: 95%;
+  border-radius: 6px;
+  position: relative;
+  background-color: #fff;
+  margin: 3px auto;
+  padding-bottom: 6px;
+}
+.storemain .stores text:first-child{
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 8px 4px;
+}
+.storemain .stores .short{
+  font-size: 10px;
+  background-color: rgb(255,244,235);
+  padding: 4px;
+  color: rgb(247,135,69);
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.storemain .stores .distance{
+  float: right;
+  font-size: 11px;
+  color: rgb(148,148,148);
+  margin-top: 10px;
+  margin-right: 5px;
+}
+.storemain .stores .bo{
+  font-size: 10px;
+  color: rgb(137,137,137);
+}
+.storemain .stores .topword text{
+  display: inline-block;
+}
+.storemain .stores button{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  top: 0;
+}
+.storeword text{
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 7px;
+}
+.storeword text:first-child{
+  font-size: 12px;
+  margin-top: 5px;
+}
+.storeword text:last-child{
+  font-size: 10px;
+  color:darkgray;
+  
+}
+
+/* 初始选择档口页面开始 */
+.chooseStCon{
+  background-color: rgb(247,247,247);
+  width: 100%;
+}
+.chooseStCon image{
+  width: 35%;
+  height:100px;
+  display: block;
+  padding-top: 100px;
+  margin: 0 auto 0 auto;
+}
+.chooseStCon text{
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+}
+.chooseStCon .choose{
+  display: block;
+  padding: 8px 6px;
+  width: 26%;
+  font-size: 14px;
+  background-color: rgb(7,193,96);
+  color:white;
+  margin-top: 20px;
+}

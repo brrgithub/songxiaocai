@@ -1,0 +1,65 @@
+<!--pages/login/index.wxml-->
+<!-- <button class='phone-text' bindtap="clickoo"   open-type="getPhoneNumber" wx:if="{{show}}"  lang="zh_CN" bindgetphonenumber="getPhoneNumber">请登录</button> -->
+<!-- bindgetphonenumber="getPhoneNumber" -->
+<!-- <text wx:if="{{isshow}}">登录成功{{show}}</text> -->
+<!-- <button bindtap="clickoo">点击</button> -->
+<view class="mywarp">
+  <view class="mytop">
+    <view class="login">
+      <image src="{{avatarUrl}}"></image>
+      <text class="nickname" wx:if="{{isSHowNickname}}">{{nickName}}</text>
+      <view class="loginbtn" style="{{logincss}}">
+        <text  class='phone-text lo' bindtap="clickoo"   open-type="getPhoneNumber" wx:if="{{show}}"  lang="zh_CN" bindgetphonenumber="getPhoneNumber" >登录 /</text>
+        <text  > 注册</text>
+      </view>
+    </view>
+    <view class="fund">
+      <view> 
+        <text>0.00</text>
+        <text>账户余额(元)</text>
+      </view>
+      <view> 
+        <text>0</text>
+        <text>优惠券(张)</text>
+      </view>
+    </view>
+  </view>
+  <view class="mybottom">
+    <view class="myorder">
+      <text class="ordertext">我的订单</text>
+      <view class="orderlist">
+        <view class="order">
+          <image src="../img/user/order.png"></image>
+          <text>全部订单</text>
+        </view>
+        <view class="order">
+          <image src="../img/user/unpay.png"></image>
+          <text>待付款</text>
+        </view>
+        <view class="order">
+          <image src="../img/user/unreceived.png"></image>
+          <text>待提货</text>
+        </view>
+        <view class="order">
+          <image src="../img/user/finished.png"></image>
+          <text>已完成</text>
+        </view>
+      </view>
+    </view>
+    <view class="function" >
+      <text class="funtext">功能</text>
+      <view class="myfun" >
+        <view class="fun" wx:for="{{functionlist}}">
+          <image src="{{item.icon}}"></image>
+          <text>{{item.title}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+
+
+
+

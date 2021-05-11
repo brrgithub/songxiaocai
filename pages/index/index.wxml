@@ -1,0 +1,73 @@
+<!--index.wxml-->
+<!-- 选择档口页面 -->
+<view class="chooseStCon" wx:if="{{nochoose}}">
+  <image src="../img/choose1.png"></image>
+  <text>请选择档口，为您展示可选购产品</text>
+  <button class="choose">选择档口</button>
+</view>
+<!-- 选择档口页面结束 -->
+
+<!-- 首页内容页面 -->
+<view class="container" wx:if="{{choose}}">
+  <!-- 首页头部 -->
+  <view class="top">
+    <image src="../img/bg.jpeg"></image>
+    <view class="topword">
+      <text class="storename" bindtap="againChooseStore">{{storename}}▼</text>
+      <text class="top1">买菜选小菜，早买早优惠，多买多优惠</text>
+      <text class="top2">10元·新人优惠券</text>
+      <button class="comeon">立即领取</button>
+      <image class="godata" src="../img/godata.png"></image>
+    </view>
+  </view>
+  <!-- 头部结束 -->
+
+  <!-- 目录 -->
+  <view class="main">
+    <view class="maintop">
+      <view class="goods" wx:for="{{goodlist}}" wx:key="value">
+        <image src="https://rong.jujiaoweb.com/{{item.cateimg}}"></image>
+        <text class="goodtitle">{{item.catename}}</text>
+      </view>
+    </view>
+    <!-- 目录结束 -->
+
+    <!-- 推荐 -->
+    <view class="recommend">
+      <view class="recommendtop">
+        <text class="t1">人气推荐</text>
+        <text class="t2">看看大家都在买什么</text>
+      </view>
+      <view class="recommendmain">
+        <view class="goods" wx:for="{{recommendList}}" wx:key="value">
+          <image src="{{item['imgsrc']}}"></image>
+          <text class="title">{{item['title']}}</text>
+          <text class="detail">{{item.detail}}</text>
+        </view>
+      </view>
+    </view>
+    <!-- 推荐结束 -->
+
+    
+  </view>
+</view>
+<!-- 档口选择弹出框 -->
+<view class="storemain" wx:if="{{storeshow}}" animation="{{animationData}}">
+  <view class="storeword">
+    <text>请选择档口</text>
+    <text>已为您展示距离较近的档口</text>
+  </view>
+  <view class="stores" wx:for="{{storelist}}" data-index ='{{index}}'>
+    
+    
+    <view class="topword" >
+      <text>{{item.storename}}</text>
+      <text wx:if="{{index == 0}}" class="short">离我最近</text>  
+      <text class="distance">距离我{{item.distance}}公里</text> 
+    </view>
+    <text class="bo">营业时间：{{item.opentime}}</text>
+    <text class="bo" >所在市场：{{item.market}}</text>
+    <button data-name="{{item.storename}}" data-index ='{{index}}' bindtap="chooseStore"></button>
+  </view>
+</view>
+

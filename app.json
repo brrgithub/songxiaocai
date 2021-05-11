@@ -1,0 +1,58 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/classify/classify",
+    "pages/buy/buy",
+    "pages/message/message",
+    "pages/my/my"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示" 
+    }
+  },
+  "window":{
+    "backgroundColor": "#ECEBEB",
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ECEBEB",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "iconPath":"/pages/img/tabbar/home01.png",
+        "selectedIconPath":"/pages/img/tabbar/home02.png",
+        "title":"首页"
+      },
+      {
+        "pagePath":"pages/classify/classify",
+        "iconPath":"/pages/img/tabbar/cate01.png",
+        "selectedIconPath":"/pages/img/tabbar/cate02.png",
+        "title":"分类"
+      },
+      {
+        "pagePath":"pages/buy/buy",
+        "iconPath":"/pages/img/tabbar/cart01.png",
+        "selectedIconPath":"/pages/img/tabbar/cart02.png",
+        "title":"购物车"
+      },
+      {
+        "pagePath":"pages/message/message",
+        "iconPath":"/pages/img/tabbar/news01.png",
+        "selectedIconPath":"/pages/img/tabbar/news02.png",
+        "title":"资讯"
+      },
+      {
+        "pagePath":"pages/my/my",
+        "iconPath":"/pages/img/tabbar/user01.png",
+        "selectedIconPath":"/pages/img/tabbar/user02.png",
+        "title":"资讯"
+      }
+    ]
+  }
+}

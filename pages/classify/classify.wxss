@@ -1,0 +1,94 @@
+/* pages/classify/classify.wxss */
+page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.classifyWarp{
+  background-color: #fff;
+}
+.all{
+  border: black 1px solid;
+}
+.content {
+  flex: 1;
+  display: flex;
+}
+/* 左侧菜单 */
+.cate {
+  width: 202rpx;
+  font-size: 28rpx;
+}
+
+/* 隐藏滚动条 */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.cate-item {
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+
+.cate-unselect {
+  color: #6c6c6c;
+}
+.cate-name{
+  font-size: 13px;
+}
+.cate-selected {
+  color: rgb(58,205,101);
+  border-left: 6rpx solid rgb(58,205,101);
+}
+
+/* 右侧菜单 */
+.good-cate {
+  font-size: 24rpx;
+  padding: 10rpx;
+  color: #ff9c35;
+}
+
+.good-item {
+  margin: 40rpx 20rpx;
+}
+.good-itemtop{
+  clear: both;
+  display: flex;
+}
+
+.good-item-pic {
+  margin-right: 20rpx;
+  width: 140rpx;
+  height: 140rpx;
+}
+.good-item-pic > image {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.good-item-info {
+  flex: 1;
+  font-size: 30rpx;
+  margin-top: 4rpx;
+  display: block;
+}
+.good-item-price {
+  margin-top: 14rpx;
+  color: #f05a86;
+}
+.good-item-buy{
+  float: right;
+}
+.good-item-buy .buy{
+  width: 40px;
+  height: 20px;
+  line-height: 15px;
+  font-size: 10px;
+  padding: 3px;
+  background-color: rgb(55,203,102);
+  color: white;
+  border-radius: 10px;
+}
